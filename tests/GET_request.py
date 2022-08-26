@@ -9,5 +9,6 @@ def test_get_request():
     js = json.loads(response.text)
     value = jsonpath.jsonpath(js, "total")
     assert value[0] == 12
-    print(f"Status Code is{response.status_code}")
-    print(f"Value Is{value}")
+    print(f"Status Code is {response.status_code}")
+    print(f"Value Is {value}")
+
