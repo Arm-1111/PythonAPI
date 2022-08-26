@@ -21,7 +21,7 @@ def test_post_request():
     response_json = json.loads(response.text)
     print(response_json)
     id_json = jsonpath.jsonpath(response_json, "id")
-    id = jsonpath.jsonpath(response_json, "id")
+    id_new = jsonpath.jsonpath(response_json, "id")
     print(f"Json id is {id_json[0]}")
     assert id_json == id
 
